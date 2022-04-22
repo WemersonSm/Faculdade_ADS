@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mylib.css">
+    <title>Cadastro de Pessoa Fisica</title>
+</head>
+
+<body>
+
+    <div class="form">
+
+        <h1 class="tituloPF">CADASTRO PESSOA FISICA</h1>
+        <div class="preeencher">
+            <button class="btnPreencher" onclick="preencher()">Preencher</button>
+        </div>
+        <form>
+            <div class="dadosPessoais">
+                <div class="linha1">
+                    <label for="nome">Nome:</label>
+                    <input id="nome" type="text" name="nome" value="" size="90">
+                    <label for="estCivil">Est. Civil:</label>
+                    <input id="estCivil" value="" type="text" name="estCivil" size="49">
+                    <label for="data">Data Nascimento:</label>
+                    <input id="data" value="" type="date" name="data" size="20">
+                </div>
+
+                <label for="nascimento">Local Nascimento:</label>
+                <input id="nascimento" value=""type="text" name="nascimento" size="70">
+                <label for="rg">Nº RG:</label>
+                <input id="rg" value=""type="text" name="rg" size="50">
+                <label for="cic">Nº CIC:</label>
+                <input id="cic" value="" type="text" name="cic" size="36">
+
+                <label for="residencia">Residencia:</label>
+                <input id="residencia" value=""type="text" name="residencia" size="189">
+
+                <label for="fone">Fone:</label>
+                <input id="fone" value=""type="tel" name="fone" placeholder="(___)_____-____" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    size="11" maxlength="12">
+                <label for="bairro">Bairro:</label>
+                <input id="bairro" value="" type="text" name="bairro" size="89">
+                <label for="cidade">Cidade:</label>
+                <input id="cidade" value=""type="text" name="cidade" size="69">
+
+                <label for="temp">Ha qto. Tempo:</label>
+                <input id="temp" value=""type="text" name="tempo" size="40">
+                <label for="casa">Casa Propria?:</label>
+                <input id="casa" value=""type="text" name="casa" size="37">
+                <label for="aluguel">Aluguel R$:</label>
+                <input id="aluguel" value=""type="text" name="aluguel" size="25">
+                <label for="pensao">Pensão R$:</label>
+                <input id="pensao" value=""type="text" name="pensao" size="27">
+
+                <label for="resAnt">Res. Ant:</label>
+                <input id="resAnt" value="" type="text" name="resAnt" size="65">
+                <label for="cidadeAnt">Cidade:</label>
+                <input id="cidadeAnt" value="" type="text" name="cidadeAnt" size="70">
+                <label for="qtoTemp">Qto Tempo:</label>
+                <input id="qtoTemp" value=""type="text" name="qtoTempAnt" size="24">
+
+                <label for="locTrab">Local de Trabalho:</label>
+                <input id="locTrab" value=""type="text" name="locTrab" size="143">
+                <label for="funcao">Função:</label>
+                <input id="funcao" value=""type="text" name="funcao" size="25">
+
+                <label for="enderecolocTrab">Endereço:</label>
+                <input id="enderecolocTrab" value=""type="text" name="enderecolocTrab" size="83">
+                <label for="cidadelocTrab">Cidade:</label>
+                <input id="cidadelocTrab" value=""type="text" name="cidadelocTrab" size="71">
+                <label for="fonelocTrab">Fone:</label>
+                <input id="fonelocTrab" value=""type="tel" name="fonelocTrab" placeholder="(___)_____-____" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    size="11" maxlength="12">
+
+                <label for="admicao">Admitido em:</label>
+                <input id="admicao" value=""type="date" name="admicao" size="20">
+                <label for="regEmpr">Reg. no empregador:</label>
+                <input id="regEmpr" value=""type="text" name="regEmpr" size="79">
+                <label for="salario">Salário R$:</label>
+                <input id="salario" value=""type="text" name="salario" size="48">
+
+                <label for="emprAnt">Emprego Ant.:</label>
+                <input id="emprAnt" value=""type="text" name="emprAnt" size="135">
+                <label for="emprAntDe">de:</label>
+                <input id="emprAntDe" value=""type="date" name="emprAntDe" size="20">
+                <label for="emprAntAte">até:</label>
+                <input id="emprAntAte" value=""type="date" name="emprAntAte" size="20">
+            </div>
+
+            <div class="dadosConjuge">
+                <label for="conjuge">Conjuge:</label>
+                <input id="conjuge" value=""type="text" name="conjuge" size="156">
+                <label for="dataConjuge">Data Nascimento:</label>
+                <input id="dataConjuge" value=""type="date" name="data" size="28"> <br>
+
+                <label for="rgConjuge">Nº RG:</label>
+                <input id="rgConjuge" value=""type="text" name="rg" size="50">
+                <label for="localTrabConjuge">Local de Trabalho:</label>
+                <input id="localTrabConjuge" value=""type="text" name="localTrab" size="117">
+
+                <label for="enderecoConju">Endereço:</label>
+                <input id="enderecoConju" value=""type="text" name="enderecoConju" size="80">
+                <label for="cidadeConju">Cidade:</label>
+                <input id="cidadeConju" value=""type="text" name="cidadeConju" size="71">
+                <label for="foneConju">Fone:</label>
+                <input id="foneConju" value=""type="tel" name="foneConju" placeholder="(___)_____-____" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    size="11" maxlength="12">
+
+                <label for="admicaoConju">Admitido em:</label>
+                <input id="admicaoConju" value=""type="date" name="admicaoConju" size="20">
+                <label for="regEmprConju">Reg. no empregador:</label>
+                <input id="regEmprConju" value=""type="text" name="regEmprConju" size="77">
+                <label for="salatioConju">Salário R$:</label>
+                <input id="salatioConju" value=""type="text" name="salarioConju" size="48">
+            </div>
+
+            <div class="dadosParente">
+                <label for="tipoParent">Parente:</label>
+                <input id="tipoParent" value=""type="text" name="tipoParent" size="30">
+                <label for="nomeParen">Nome:</label>
+                <input id="nomeParen" value=""type="text" name="nomeParen" size="127">
+                <label for="foneParen">Fone:</label>
+                <input id="foneParen" value=""type="tel" name="foneParen" placeholder="(___)_____-____" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    size="11" maxlength="12">
+
+                <label for="ruaParent">Rua:</label>
+                <input id="ruaParent" value=""type="text" name="ruaParent" size="90">
+                <label for="bairroParen">Bairro:</label>
+                <input id="bairroParen" value=""type="text" name="bairroParen" size="40">
+                <label for="cidadeParen">Cidade:</label>
+                <input id="cidadeParen" value=""type="text" name="cidadeParen" size="40">
+
+                <label for="nomeAmigo">Nome de Amigo:</label>
+                <input id="nomeAmigo" value=""type="text" name="nomeAmigo" size="162">
+                <label for="foneAmigo">Fone:</label>
+                <input id="foneAmigo" value=""type="tel" name="foneAmigo" placeholder="(___)_____-____" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    size="11" maxlength="12">
+
+                <label for="ruaAmigo">Rua:</label>
+                <input id="ruaAmigo" value=""type="text" name="ruaAmigo" size="90">
+                <label for="bairroAmigo">Bairro:</label>
+                <input id="bairroAmigo" value=""type="text" name="bairroAmigo" size="40">
+                <label for="cidadeAmigo">Cidade:</label>
+                <input id="cidadeAmigo" value=""type="text" name="cidadeAmigo" size="40">
+            </div>
+
+            <div class="assinatura">
+
+                <div class="refCo">
+                    <label for="refComercial">Ref Comercial:</label> <br>
+                    <label for="1-">1 - </label>
+                    <input id="refComercial-1" value=""type="text" name="1-" size="60">
+                    <label for="2-">2 - </label>
+                    <input id="refComercial-2" value=""type="text" name="2-" size="60">
+                    <label for="3-">3 - </label>
+                    <input id="refComercial-3" value=""type="text" name="3-" size="60">
+                    <label for="4-">4 - </label>
+                    <input id="refComercial-4" value=""type="text" name="4-" size="60">
+                </div>
+                <div class="assinaturas">
+                    <input id="assinaturasData" value=""type="text" name="input"
+                        value="                                                                 /           /          "
+                        size="60"> <br>
+                    <input id="assinaturaCliente" value=""type="text" name="assinaturaCliente" size="60"> <br>
+                    <label for="assinaturaCliente">Assinatura Cliente </label> <br>
+                    <input id="assinaturaConguge" value=""type="text" name="assinaturaConguge" size="60"> <br>
+                    <label for="assinaturaConguge"> Assinatura Conguge </label> <br>
+                </div>
+                <div class="carimbo">
+                    <div class="carimbo2">
+                        <img src="" id='img1'>
+                    </div>
+                    <label for="assinaturaCoguhe"> CARIMBO </label>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+
+    <script type="text/javascript" src="../js/cadPessoa.js"></script>
+</body>
+
+</html>

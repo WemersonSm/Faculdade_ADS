@@ -1,0 +1,108 @@
+@charset"UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    max-width:100%;
+    background: url(../img/Automotive-leak-backgrounds.jpg) center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* e agora a regra de ouro que fará a imagem ocupar todo o viewport */
+    background-size: 100% 100%;
+    color:white;
+    font-family: sans-serif;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+fieldset{
+    border: 1px solid red;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+h1.tituloCarro{
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+}
+
+.icon{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.legenda{
+    background-color: red;
+    margin-top: -10px;
+    margin-left: 3vw;
+    position: absolute;
+    width:190px;
+    height:25px;
+}
+
+input{
+    margin-left: 30px;
+} 
+
+select{
+    margin-left: 30px;
+}
+
+.inputLabel{
+ text-align: right;
+ width:100px;
+}
+
+.imputBox {
+    margin-top: -95px;
+    margin-left: 80px;
+}
+
+.inputLabel2{
+    text-align: right;
+    width: 210px;
+    
+}
+
+.inputBox2{
+    margin-top: -320px;
+    margin-left: 202px;
+}
+
+.preeencher{
+    margin-top:10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.btnPreencher{
+    margin-top: 15px;
+    padding-left: 10px;
+    padding: 10px 10px;
+    width: 190px;
+    color: #fff;
+    background: rgba(141, 0, 0, 0.781);
+    border: 1px;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none; 
+    margin-left: 40%;
+}
+

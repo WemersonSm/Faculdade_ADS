@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mylibCadVeic.css">
+    <title>Cadastro de Veiculos</title>
+</head>
+
+<body>
+    <main>
+        <div class="tituloCarro">
+            <div class="icon">
+                <img class="img-fluid mx-auto d-block" src="../img/icons8-caminhão-48.png" width="65" height="65">
+            </div>
+            <h1 class="tituloCarro">Cadastro de Veiculos</h1><br>
+        </div>
+        <div class="box">
+            <form action="">
+                <fieldset>
+                    <div class="legenda">
+                        <legend><b>Informações do Veiculo</b></legend>
+                    </div>
+                    <br>
+                    <div class="inputLabel">
+                        <label for="placa">PLACA:</label> <br>
+                        <label for="pais">PAIS:</label><br>
+                        <label for="renavan">RENAVAN:</label><br>
+                    </div>
+                    <div id="inputBx" class="imputBox">
+                        <input id="placa" type="text" name="placa" value=""><br>
+                        <select id="pais" name="pais"> <br>
+                            <option id="brasil" value="brasil">Brasil</option>
+                            <option id="usa" value="usa">USA</option>
+                            <option id="espanha" value="espanha">Espanha</option>
+                        </select><br>
+                        <input id="renavan" type="text" name="renavan" value=""><br><br>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="box">
+            <form action="">
+                <fieldset>
+                    <div class="legenda">
+                        <legend><b>Dados do Veiculo</b></legend>
+                    </div>
+                    <br>
+                    <div class="inputLabel2">
+                        <label for="tipoUnidad">TIPO DE UNIDADE:</label> <br>
+                        <label for="marca">MARCA:</label><br>
+                        <label for="modelo">MODELO:</label><br>
+                        <label for="ano">ANO:</label><br>
+                        <label for="peso">PESO(T):</label><br>
+                        <label for="numeroEixos">NUMERO DE EIXOS:</label><br>
+                        <label for="numeroChassi">NUMERO CHASSI:</label><br>
+                        <label for="cor">COR:</label><br>
+                        <label for="primeiroLicenciamento">PIMEIRO LICENCIAMENTO:</label><br>
+                        <label for="ultimoLicenciamento">ULTIMO LICENCIAMENTO:</label>
+                    </div>
+                    <div class="inputBox2">
+                        <select id="tipoUnidad" name="tipoUnidad"> <br>
+                            <option id="unidadeTatrora" value="unidadeTatrora">Unidade Tratora</option>
+                            <option id="unidadeCarga" value="unidadeCarga">Unidade Carga</option>
+                            <option id="unidadeBus" value="unidadeBus">Unidade Bus</option>
+                        </select><br>
+                        <input id="marca" type="text" name="marca" value=" "><br>
+                        <input id="modelo" type="text" name="modelo" value=""><br>
+                        <input id="ano" type="text" name="ano" value=""><br>
+                        <input id="peso" type="text" name="peso"><br>
+                        <input id="numeroEixos" type="text" name="numeroEixos" value=""><br>
+                        <input id="numeroChassi" type="text" name="numeroChassi" value=""><br>
+                        <select id="cor" name="cor"> <br>
+                            <option id="branco" value="branco">Branco</option>
+                            <option id="prata" value="prata">Prata</option>
+                            <option id="preto" value="preto">Preto</option>
+                            <option id="vermelho" value="vermelho">Vermelho</option>
+                            <option id="azul" value="azul">Azul</option>
+                        </select><br>
+                        <input id="dateIn" type="date" name="primeiroLicenciamento" value=""><br>
+                        <input id="dateOut" type="date" name="ultimoLicenciamento" value=""><br><br>
+
+                    </div>
+                </fieldset>
+    
+
+            </form>
+        </div>
+        <div class="preeencher">
+            <button class="btnPreencher" onclick="preencher()">Preencher</button>
+        </div>
+
+    </main>
+
+    <script type="text/javascript" src="../js/cadVeiculo.js"></script>
+
+</body>
+
+</html>
